@@ -5,18 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- inicia la parte superior del sitio -->
     <header>
-        <div>
+        <div class="navbar-container">
             <div>
-                <a href="#"><img src="assets/img/PT-Logo-New2_0.png" alt="Logo de Pepsi"></a>
+                <a href="#"><img class="navbar-logo" src="assets/img/PT-Logo-New2_0.png" alt="Logo de Pepsi"></a>
             </div>
 
             <div>
                 <nav>
-                    <ul>
+                    <ul class="navbar">
                         <li>
                             <a href="#">inicio</a>
                         </li>
@@ -36,16 +39,16 @@
                 </nav>
             </div>
 
-            <div>
-                <ul>
+            <div class="social-media-container">
+                <ul class="social-media">
                     <li>
-                        <a href="#" target="_blank"><img src="#" alt="logo que dirige a instagram"></a>
+                        <a href="#" target="_blank"><img src="assets/img/logos/logo-instagram.png" alt="logo que dirige a instagram"></a>
                     </li>
                     <li>
-                        <a href="#" target="_blank"><img src="#" alt="logo que dirige a twitter"></a>
+                        <a href="#" target="_blank"><img src="assets/img/logos/logo-twitter.png" alt="logo que dirige a twitter"></a>
                     </li>
                     <li>
-                        <a href="#" target="_blank"><img src="#" alt="logo que dirige a facebook"></a>
+                        <a href="#" target="_blank"><img src="assets/img/logos/logo-facebook.png" alt="logo que dirige a facebook"></a>
                     </li>
                 </ul>
             </div>
@@ -63,28 +66,60 @@
             <!-- acá va el banner principal -->
         </section>
 
-        <section>
-            <article>
-                <img src="assets/img/Pepsi_Packshot_226x327px_01.png" alt="Pepsi original">
-                <h2>original</h2>
-                <a href="#">info producto</a>
-            </article>
-            <article>
-                <img src="assets/img/Pepsi_Packshot_226x327px_02.png" alt="Pepsi zero azúcar">
-                <h2>zero azúcar</h2>
-                <a href="#">info producto</a>
-            </article>
-            <article>
-                <img src="assets/img/Pepsi_Packshot_226x327px_03.png" alt="Pepsi zero azúcar zero cafeína">
-                <h2>zero azúcar zero cafeína</h2>
-                <a href="#">info producto</a>
-            </article>
-            <article>
-                <img src="assets/img/Pepsi_Packshot_226x327px_04_6d9fb4abebfcd94632de221d82323aeb.png" alt="Pepsi zero azúcar lima">
-                <h2>zero azúcar lima</h2>
-                <a href="#">info producto</a>
-            </article>
-        </section>
+    <div class="contenedor-latas">
+        <article class="etiqueta-lata">
+            <div>
+                <img src="assets/img/lata-pepsi-1.svg" alt="">
+            </div>
+            <div>
+                <h2>
+                    original
+                </h2>
+            </div>
+            <div class="contenedor-btn">
+                <a class="btn" href="#">info producto</a>
+            </div>
+        </article>
+        <article class="etiqueta-lata">
+            <div>
+                <img src="assets/img/lata-pepsi-2.svg" alt="">
+            </div>
+            <div>
+                <h2>
+                    zero azúcar
+                </h2>
+            </div>
+            <div class="contenedor-btn">
+                <a class="btn" href="#">info producto</a>
+            </div>
+        </article>
+        <article class="etiqueta-lata">
+            <div>
+                <img src="assets/img/lata-pepsi-3.svg" alt="">
+            </div>
+            <div>
+                <h2>
+                    zero azúcar zero cafeína
+                </h2>
+            </div>
+            <div class="contenedor-btn">
+                <a class="btn" href="#">info producto</a>
+            </div>
+        </article>
+        <article class="etiqueta-lata">
+            <div>
+                <img src="assets/img/lata-pepsi-4.svg" alt="">
+            </div>
+            <div>
+                <h2>
+                    zero azúcar lima
+                </h2>
+            </div>
+            <div class="contenedor-btn">
+                <a class="btn" href="#">info producto</a>
+            </div>
+        </article>
+    </div>
 
     </main>
 
