@@ -71,7 +71,7 @@ ul{
         /* MAIN */
 
 .portada{
-    width: 100%;
+    width: 100vw;
     height: auto;
 }
 
@@ -103,6 +103,24 @@ ul{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+}
+
+@media (max-width: 920px){
+    .social-media-container{
+        display: none;
+    }
+    .contenedor-bases-footer li:nth-child(n+3){
+        display: none;
+        gap: 16px;
+    }
+    ul li a{
+        font-size: .8125rem;
+}
+    .navbar-container{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
     }
 }
 
