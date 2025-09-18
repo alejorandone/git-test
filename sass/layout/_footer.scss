@@ -1,0 +1,62 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 20px 0;
+    margin: 20px auto;
+    border-top: 2px solid white;
+
+    p {
+        text-transform: uppercase;
+        font-family: sans-serif;
+        font-size: 1.875rem;
+        font-weight: 900;
+        color: white;
+        letter-spacing: .25rem;
+        padding: 10px;
+    }
+    }
+
+    .footer__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+
+    img {
+        width: 1.5rem;
+        height: auto;
+        display: block;
+        margin: 10px auto;
+    }
+
+    }
+
+
+    .footer__terminos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 1.25rem;
+
+    li {
+        list-style: none;
+        margin: 10px auto;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        font-weight: 900;
+        font-size: 20px;
+        text-decoration: underline;
+        &:hover {
+        color: blue;
+        }
+    }
+}
