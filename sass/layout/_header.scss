@@ -1,0 +1,46 @@
+@use "../utilities/variables" as *;
+
+.navbar {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+
+    &__logo {
+        img {
+        width: 7.5rem;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+
+        li {
+        list-style: none;
+        }
+
+        a {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        font-weight: 900;
+
+        &:hover {
+            color: blue;
+        }
+        }
+    }
+
+    &__icons {
+        display: flex;
+        gap: 1.5625rem;
+        align-items: center;
+        padding-right: 1.875rem;
+
+        img {
+        width: 1.5rem;
+        }
+    }
+}

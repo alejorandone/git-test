@@ -1,0 +1,12 @@
+.carrousel__portada {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+
+    img {
+        width: auto;
+        height: 100vh;
+        object-fit: cover; // para que no se deforme en pantallas anchas
+    }
+}

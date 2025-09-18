@@ -1,0 +1,58 @@
+/* CONTENEDOR DE TODAS LAS CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas en desktop */
+    gap: 20px;
+    padding: 20px;
+
+    /* breakpoint para tablets: 2x2 */
+    @media (max-width: 992px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* breakpoint para mobile: 1 abajo de otra */
+    @media (max-width: 576px) {
+        grid-template-columns: 1fr;
+    }
+    }
+
+    /* ESTILO DE LA CARD */
+    .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: black;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+
+    &__img {
+        display: block;
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        object-fit: contain; /* mantiene proporción sin deformar */
+        margin: 0 auto;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-family: sans-serif;
+        font-weight: 900;
+        font-size: 2rem;
+        color: white;
+    }
+
+    &__button {
+        background-color: blue;
+        padding: 10px 20px;
+        border-radius: 20px;
+        color: white;
+        font-family: sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        text-decoration: none;
+    }
+}
