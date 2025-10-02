@@ -4,52 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <!-- inicia la parte superior del sitio -->
     <header>
-        <div class="navbar-container">
-            <div>
-                <a href="#"><img class="navbar-logo" src="../assets/img/PT-Logo-New2_0.png" alt="Logo de Pepsi"></a>
+
+        <nav class="navbar">
+
+            <a class="navbar__logo" href="#"><img src="../assets/img/logos/PT-Logo-New2_0.png" alt="logo pepsi inicio"></a>
+
+            <ul class="navbar__menu">
+                <li>
+                    <a href="#">inicio</a>
+                </li>
+                <li>
+                    <a href="#">productos</a>
+                </li>
+                <li>
+                    <a href="https://contact.pepsico.com/pepsiesp" target="_blank">contacto</a>
+                </li>
+                <li>
+                    <a href="#">faq</a>
+                </li>
+                <li>
+                    <a href="https://www.pepsicoprivacypolicy.com/es?domain=pepsi.es" target="_blank">privacidad</a>
+                </li>
+            </ul>
+
+            <div class="navbar__icons">
+                <a href="#"><img src="../assets/img/logos/logo-instagram.png" alt="instagram"></a>
+                <a href="#"><img src="../assets/img/logos/logo-facebook.png" alt="facebook"></a>
+                <a href="#"><img src="../assets/img/logos/logo-twitter.png" alt="twitter"></a>
             </div>
 
-            <div>
-                <nav>
-                    <ul class="nav">
-                        <li>
-                            <a href="../index.html">inicio</a>
-                        </li>
-                        <li>
-                            <a href="#">productos</a>
-                        </li>
-                        <li>
-                            <a href="https://contact.pepsico.com/pepsiesp" target="_blank">contacto</a>
-                        </li>
-                        <li>
-                            <a href="faq.html">faq</a>
-                        </li>
-                        <li>
-                            <a href="https://www.pepsicoprivacypolicy.com/es?domain=pepsi.es" target="_blank">privacidad</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="social-media-container">
-                <ul class="social-media">
-                    <li>
-                        <a href="https://www.instagram.com/pepsi_es/#" target="_blank"><img src="../assets/img/logos/logo-instagram.png" alt="logo que dirige a instagram"></a>
-                    </li>
-                    <li>
-                        <a href="https://x.com/Pepsi_es" target="_blank"><img src="../assets/img/logos/logo-twitter.png" alt="logo que dirige a twitter"></a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/pepsiES" target="_blank"><img src="../assets/img/logos/logo-facebook.png" alt="logo que dirige a facebook"></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        </nav>
 
 
     </header>
@@ -60,64 +49,35 @@
     <main>
     
     <div class="contenedor-titulo-productos">
-        <h1 class="titulo-productos">nuestros productos</h1>
+        <h1 class="productos__titulo">nuestros productos</h1>
     </div>
 
 
-    <div class="contenedor-latas">
-        <article class="etiqueta-lata">
-            <div>
-                <img src="../assets/img/lata-pepsi-1.svg" alt="">
+        <section class="cards">
+            <div class="card">
+                <img class="card__img" src="../assets/img/lata-pepsi-1.svg" alt="Lata Pepsi clásica">
+                <h2 class="card__title">Clásica</h2>
+                <a class="card__button" href="#">Info producto</a>
             </div>
-            <div>
-                <h2>
-                    original
-                </h2>
+
+            <div class="card">
+                <img class="card__img" src="../assets/img/lata-pepsi-2.svg" alt="Lata Pepsi clásica">
+                <h2 class="card__title">Clásica</h2>
+                <a class="card__button" href="#">Info producto</a>
             </div>
-            <div class="contenedor-btn">
-                <a class="btn" href="#">info producto</a>
+
+            <div class="card">
+                <img class="card__img" src="../assets/img/lata-pepsi-3.svg" alt="Lata Pepsi clásica">
+                <h2 class="card__title">Clásica</h2>
+                <a class="card__button" href="#">Info producto</a>
             </div>
-        </article>
-        <article class="etiqueta-lata">
-            <div>
-                <img src="../assets/img/lata-pepsi-2.svg" alt="">
+
+            <div class="card">
+                <img class="card__img" src="../assets/img/lata-pepsi-4.svg" alt="Lata Pepsi clásica">
+                <h2 class="card__title">Clásica</h2>
+                <a class="card__button" href="#">Info producto</a>
             </div>
-            <div>
-                <h2>
-                    zero azúcar
-                </h2>
-            </div>
-            <div class="contenedor-btn">
-                <a class="btn" href="#">info producto</a>
-            </div>
-        </article>
-        <article class="etiqueta-lata">
-            <div>
-                <img src="../assets/img/lata-pepsi-3.svg" alt="">
-            </div>
-            <div>
-                <h2>
-                    zero azúcar zero cafeína
-                </h2>
-            </div>
-            <div class="contenedor-btn">
-                <a class="btn" href="#">info producto</a>
-            </div>
-        </article>
-        <article class="etiqueta-lata">
-            <div>
-                <img src="../assets/img/lata-pepsi-4.svg" alt="">
-            </div>
-            <div>
-                <h2>
-                    zero azúcar lima
-                </h2>
-            </div>
-            <div class="contenedor-btn">
-                <a class="btn" href="#">info producto</a>
-            </div>
-        </article>
-    </div>
+        </section>
 
     </main>
 
@@ -130,7 +90,7 @@
             pepsi
         </p>
 
-        <ul class="contenedor-redes-footer">
+        <ul class="footer__icons">
             <li>
                 <a href="https://x.com/Pepsi_es" target="_blank"><img src="../assets/img/logos/logo-twitter.png" alt="logo que dirige a twitter"></a> <!--twitter-->
             </li>
@@ -142,7 +102,7 @@
             </li>
         </ul>
 
-        <ul class="contenedor-bases-footer">
+        <ul class="footer__terminos">
             <li><a href="#">condiciones de uso</a></li>
             <li><a href="#">bases legales</a></li>
             <li><a href="#">privacidad</a></li>

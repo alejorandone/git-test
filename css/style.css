@@ -9,6 +9,16 @@ body {
   background-color: black;
 }
 
+.productos__titulo {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: 900;
+  font-size: 4rem;
+  margin-top: 60px;
+}
+
 .navbar {
   background-color: black;
   display: flex;
@@ -110,7 +120,6 @@ footer p {
   grid-template-columns: repeat(4, 1fr); /* 4 columnas en desktop */
   gap: 20px;
   padding: 20px;
-  border-top: 2px solid white;
   /* breakpoint para tablets: 2x2 */
 }
 @media (max-width: 992px) {
@@ -170,6 +179,7 @@ footer p {
   justify-content: center;
   overflow: hidden;
   width: 100%;
+  border-bottom: 2px solid white;
 }
 .carrousel__portada img {
   width: auto;
