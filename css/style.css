@@ -277,7 +277,6 @@ footer p {
   max-width: 960px;
   margin: 0 auto;
   padding: 112px 16px;
-  box-sizing: border-box;
 }
 .faq__title {
   font-family: "Outfit", sans-serif;
@@ -370,6 +369,92 @@ footer p {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+/*CONDICIONES DE USO*/
+.condiciones {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 70px 20px;
+}
+
+.condiciones h2 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+  font-size: 3.75rem;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+
+.condiciones p {
+  color: white;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 16px;
+}
+
+.condiciones strong {
+  color: white;
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 16px;
+}
+
+/* BASES LEGALES */
+.bases {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 70px 30px;
+}
+.bases__container {
+  display: flex;
+  flex-direction: column;
+  padding: 48px 0;
+}
+
+.bases h2 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+  font-size: 3.75rem;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+
+.bases a {
+  color: white;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 820px) {
+  .condiciones h2 {
+    font-size: 2.5rem;
+  }
+  .bases h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .condiciones h2 {
+    font-size: 1.5rem;
+  }
+  .bases h2 {
+    font-size: 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
