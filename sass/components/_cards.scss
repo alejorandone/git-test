@@ -17,8 +17,19 @@
     }
     }
 
+.productos__titulo{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Outfit", sans-serif;
+    font-weight: 900;
+    font-size: 4.5rem;
+    letter-spacing: -1px;
+    margin-top: 60px;
+}
+
     /* ESTILO DE LA CARD */
-    .card {
+.card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,9 +50,10 @@
 
     &__title {
         text-transform: uppercase;
-        font-family: sans-serif;
+        font-family: "Outfit", sans-serif;
         font-weight: 900;
-        font-size: 2rem;
+        font-size: 2.25rem;
+        letter-spacing: -1px;
         color: white;
     }
 
@@ -50,8 +62,10 @@
         padding: 10px 20px;
         border-radius: 20px;
         color: white;
-        font-family: sans-serif;
-        font-weight: 700;
+        font-family: "Outfit", sans-serif;
+        font-weight: 900;
+        font-size: 1rem;
+        letter-spacing: -1px;
         text-transform: uppercase;
         text-align: center;
         text-decoration: none;

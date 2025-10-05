@@ -9,29 +9,52 @@ body {
   background-color: black;
 }
 
-.productos__titulo {
-  color: white;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: sans-serif;
-  font-weight: 900;
-  font-size: 4rem;
-  margin-top: 60px;
+/*Outfit Regular (400)*/
+@font-face {
+  font-family: "Outfit";
+  src: url("../../assets/fonts/Outfit-Regular.ttf") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
-
+/* Outfit Medium (500) */
+@font-face {
+  font-family: "Outfit";
+  src: url("../../assets/fonts/Outfit-Medium.ttf") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+/* Outfit Bold (700) */
+@font-face {
+  font-family: "Outfit";
+  src: url("../../assets/fonts/Outfit-Bold.ttf") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+/* Outfit Black (900) */
+@font-face {
+  font-family: "Outfit";
+  src: url("../../assets/fonts/Outfit-Black.ttf") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
 .navbar {
   background-color: black;
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid white;
+  border-bottom: 3px solid white;
+  padding: 26px 0;
 }
 .navbar__logo img {
-  width: 7.5rem;
+  max-width: 86px;
 }
 .navbar__menu {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
+  gap: 2.5rem;
 }
 .navbar__menu li {
   list-style: none;
@@ -40,21 +63,22 @@ body {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
-  font-family: sans-serif;
+  font-family: "Outfit", sans-serif;
   font-weight: 900;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  letter-spacing: -0.0625rem;
 }
 .navbar__menu a:hover {
   color: blue;
 }
 .navbar__icons {
   display: flex;
-  gap: 1.5625rem;
+  gap: 1.5rem;
   align-items: center;
   padding-right: 1.875rem;
 }
 .navbar__icons img {
-  width: 1.5rem;
+  width: 1.25rem;
 }
 
 footer {
@@ -63,17 +87,17 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: black;
-  padding: 20px 0;
+  padding: 26px 0;
   margin: 20px auto;
-  border-top: 2px solid white;
+  border-top: 3px solid white;
 }
 footer p {
   text-transform: uppercase;
-  font-family: sans-serif;
-  font-size: 1.875rem;
+  font-family: "Outfit", sans-serif;
+  font-size: 2.5rem;
   font-weight: 900;
   color: white;
-  letter-spacing: 0.25rem;
+  letter-spacing: -1px;
   padding: 10px;
 }
 
@@ -84,7 +108,7 @@ footer p {
   gap: 1.25rem;
 }
 .footer__icons img {
-  width: 1.5rem;
+  width: 1.25rem;
   height: auto;
   display: block;
   margin: 10px auto;
@@ -105,10 +129,11 @@ footer p {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
-  font-family: sans-serif;
+  font-family: "Outfit", sans-serif;
   font-weight: 900;
-  font-size: 20px;
-  text-decoration: underline;
+  font-size: 1.125rem;
+  letter-spacing: -1px;
+  text-decoration: none;
 }
 .footer__terminos a:hover {
   color: blue;
@@ -136,6 +161,17 @@ footer p {
   }
 }
 
+.productos__titulo {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Outfit", sans-serif;
+  font-weight: 900;
+  font-size: 4.5rem;
+  letter-spacing: -1px;
+  margin-top: 60px;
+}
+
 /* ESTILO DE LA CARD */
 .card {
   display: flex;
@@ -157,9 +193,10 @@ footer p {
 }
 .card__title {
   text-transform: uppercase;
-  font-family: sans-serif;
+  font-family: "Outfit", sans-serif;
   font-weight: 900;
-  font-size: 2rem;
+  font-size: 2.25rem;
+  letter-spacing: -1px;
   color: white;
 }
 .card__button {
@@ -167,11 +204,101 @@ footer p {
   padding: 10px 20px;
   border-radius: 20px;
   color: white;
-  font-family: sans-serif;
-  font-weight: 700;
+  font-family: "Outfit", sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  letter-spacing: -1px;
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 112px 0;
+  max-width: 960px;
+}
+.faq__title {
+  font-family: "Outfit", sans-serif;
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+  font-size: 3.75rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.faq__text {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.faq__text a {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  margin: 20px auto;
+  text-decoration: underline;
+}
+.faq {
+  /* Acordeón */
+}
+.faq__acordion {
+  margin: 20px auto;
+  text-align: left;
+}
+.faq__acordion details {
+  padding: 10px;
+}
+.faq__acordion details summary {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  letter-spacing: -1px;
+  color: white;
+  padding-bottom: 5px;
+  position: relative;
+  cursor: pointer;
+  padding-left: 20px;
+  /* Quitar marcador por defecto */
+}
+.faq__acordion details summary::-webkit-details-marker {
+  display: none;
+}
+.faq__acordion details summary::marker {
+  content: "";
+}
+.faq__acordion details summary {
+  /* Flecha personalizada */
+}
+.faq__acordion details summary::before {
+  content: "›";
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+.faq__acordion details {
+  /* Rotar flecha cuando está abierto */
+}
+.faq__acordion details[open] summary::before {
+  transform: rotate(90deg);
+}
+.faq__acordion details p {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: white;
+  padding: 5px;
+  margin-top: 10px;
 }
 
 .carrousel__portada {
@@ -179,7 +306,6 @@ footer p {
   justify-content: center;
   overflow: hidden;
   width: 100%;
-  border-bottom: 2px solid white;
 }
 .carrousel__portada img {
   width: auto;

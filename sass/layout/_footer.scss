@@ -4,17 +4,17 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: black;
-    padding: 20px 0;
+    padding: 26px 0;
     margin: 20px auto;
-    border-top: 2px solid white;
+    border-top: 3px solid white;
 
     p {
         text-transform: uppercase;
-        font-family: sans-serif;
-        font-size: 1.875rem;
+        font-family: "Outfit", sans-serif;
+        font-size: 2.5rem;
         font-weight: 900;
         color: white;
-        letter-spacing: .25rem;
+        letter-spacing: -1px;
         padding: 10px;
     }
     }
@@ -26,7 +26,7 @@ footer {
     gap: 1.25rem;
 
     img {
-        width: 1.5rem;
+        width: 1.25rem;
         height: auto;
         display: block;
         margin: 10px auto;
@@ -51,10 +51,11 @@ footer {
         text-decoration: none;
         color: white;
         text-transform: uppercase;
-        font-family: sans-serif;
+        font-family: "Outfit", sans-serif;
         font-weight: 900;
-        font-size: 20px;
-        text-decoration: underline;
+        font-size: 1.125rem;
+        letter-spacing: -1px;
+        text-decoration: none;
         &:hover {
         color: blue;
         }
