@@ -1,3 +1,5 @@
+@use "../utilities/variables" as *;
+
 /*CONDICIONES DE USO*/
 
 .condiciones{
@@ -12,7 +14,7 @@
 .condiciones h2{
         font-family: "Outfit", sans-serif;
         font-weight: 900;
-        color: white;
+        color: $color-text;
         text-transform: uppercase;
         font-size: 3.75rem;
         letter-spacing: -1px;
@@ -21,7 +23,7 @@
 
 
 .condiciones p{
-    color: white;
+    color: $color-text;
     font-family: "Outfit", sans-serif;
     font-weight: 400;
     font-size: 1rem;
@@ -29,7 +31,7 @@
 }
 
 .condiciones strong{
-    color: white;
+    color: $color-text;
     font-family: "Outfit", sans-serif;
     font-weight: 700;
     font-size: 1rem;
@@ -56,7 +58,7 @@
 .bases h2{
         font-family: "Outfit", sans-serif;
         font-weight: 900;
-        color: white;
+        color: $color-text;
         text-transform: uppercase;
         font-size: 3.75rem;
         letter-spacing: -1px;
@@ -65,7 +67,7 @@
 
 
 .bases a{
-    color: white;
+    color: $color-text;
     font-family: "Outfit", sans-serif;
     font-weight: 400;
     font-size: 1rem;
