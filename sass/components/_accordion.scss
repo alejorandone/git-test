@@ -1,14 +1,15 @@
-
 .faq {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    padding: 112px 0;
+    width: 100%;
     max-width: 960px;
-    
-        &__title {
+    margin: 0 auto;
+    padding: 112px 16px;
+    box-sizing: border-box;
+
+    &__title {
         font-family: "Outfit", sans-serif;
         font-weight: 900;
         color: white;
@@ -24,69 +25,65 @@
         font-size: 1rem;
         color: white;
         text-align: center;
-        margin-bottom: 60px;
-
+        max-width: 70ch;
+        margin: 0 auto 60px;
+        overflow-wrap: anywhere;
+        word-break: normal;
         a {
-        font-family: "Outfit", sans-serif;
-        font-weight: 400;
-        font-size: 1rem;
+        font: inherit;
         color: white;
-        text-align: center;
-        margin: 20px auto;
         text-decoration: underline;
         }
     }
 
-    /* Acordeón */
     &__acordion {
+        width: 100%;
         margin: 20px auto;
         text-align: left;
 
         details {
-        padding: 10px;
+        padding: 10px 0;
 
             summary {
                 font-family: "Outfit", sans-serif;
                 font-weight: 700;
                 font-size: 1.125rem;
-                letter-spacing: -1px;
+                letter-spacing: -0.5px;
                 color: white;
-                padding-bottom: 5px;
                 position: relative;
                 cursor: pointer;
-                padding-left: 20px; // espacio para la flecha
+                padding: 0 0 5px 20px;
 
-                /* Quitar marcador por defecto */
-                &::-webkit-details-marker {
-                display: none;
-                }
-                &::marker {
-                content: "";
-                }
-
-                /* Flecha personalizada */
+                &::-webkit-details-marker { display: none; }
+                &::marker { content: ""; }
                 &::before {
-                content: "›"; // símbolo flecha
+                content: "›";
                 position: absolute;
                 left: 0;
                 font-size: 1.2rem;
-                transition: transform 0.3s ease;
+                line-height: 1;
+                transition: transform .3s ease;
                 }
             }
 
-            /* Rotar flecha cuando está abierto */
-            &[open] summary::before {
-                transform: rotate(90deg); // de ">" a "v"
-            }
+            &[open] summary::before { transform: rotate(90deg); }
 
             p {
                 font-family: "Outfit", sans-serif;
                 font-weight: 400;
                 font-size: 1rem;
                 color: white;
-                padding: 5px;
                 margin-top: 10px;
+                padding: 5px 0;
+                overflow-wrap: anywhere;
             }
         }
+    }
+
+    @media (max-width: 768px) {
+        &__title { font-size: 2.5rem; }
+    }
+    @media (max-width: 480px) {
+        &__title { font-size: 2rem; }
     }
 }
